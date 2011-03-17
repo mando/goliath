@@ -144,7 +144,7 @@ module Goliath
           @log_file ||= File.expand_path('goliath.log')
           store_pid(Process.pid)
 
-          Dir.chdir(File.dirname(__FILE__))
+          #Dir.chdir(File.dirname(__FILE__))
           File.umask(0000)
 
           stdout_log_file = "#{File.dirname(@log_file)}/#{File.basename(@log_file)}_stdout.log"
